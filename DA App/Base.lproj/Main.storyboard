@@ -35,7 +35,7 @@
                                 </variation>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K9J-oN-Urq" userLabel="usernameTextField">
-                                <rect key="frame" x="306.5" y="92" width="283" height="30"/>
+                                <rect key="frame" x="306.5" y="67" width="283" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="i5o-8L-FEf"/>
@@ -54,11 +54,11 @@
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jf-f4-SoX" userLabel="loginButton">
-                                <rect key="frame" x="306.5" y="192" width="283" height="30"/>
+                                <rect key="frame" x="306.5" y="187" width="283" height="40"/>
                                 <color key="backgroundColor" red="0.47227627039999998" green="0.01692911796" blue="0.056457854809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0NO-vV-Hma"/>
-                                    <constraint firstAttribute="height" constant="30" id="PB9-x2-vn9"/>
+                                    <constraint firstAttribute="height" constant="40" id="PB9-x2-vn9"/>
                                 </constraints>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -79,22 +79,29 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your username or password is incorrect. Please try again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbC-Vh-4BD" userLabel="loginErrorLabel">
-                                <rect key="frame" x="306.5" y="242" width="283" height="30"/>
+                                <rect key="frame" x="306.5" y="247" width="283" height="30"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Haf-hN-UxZ"/>
                                     <constraint firstAttribute="height" constant="40" id="Of3-xQ-sBc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Haf-hN-UxZ"/>
+                                    </mask>
+                                </variation>
                                 <variation key="heightClass=compact">
                                     <mask key="constraints">
+                                        <include reference="Haf-hN-UxZ"/>
                                         <exclude reference="Of3-xQ-sBc"/>
                                     </mask>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epJ-Wz-39v" userLabel="forgotpassButton">
-                                <rect key="frame" x="306.5" y="292" width="283" height="30"/>
+                                <rect key="frame" x="306.5" y="297" width="283" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="EUu-r2-ijC"/>
                                 </constraints>
@@ -108,11 +115,11 @@
                                 </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceB-jA-kAp" userLabel="signupButton">
-                                <rect key="frame" x="306.5" y="343" width="283" height="30"/>
+                                <rect key="frame" x="306.5" y="333" width="283" height="40"/>
                                 <color key="backgroundColor" red="0.47227627039999998" green="0.01692911796" blue="0.056457854809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="FVi-v6-fRs"/>
-                                    <constraint firstAttribute="height" constant="30" id="Yfa-sc-3l7"/>
+                                    <constraint firstAttribute="height" constant="40" id="Yfa-sc-3l7"/>
                                 </constraints>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -130,7 +137,7 @@
                                 </variation>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ahe-hD-wZp" userLabel="passwordTextField">
-                                <rect key="frame" x="306.5" y="142" width="283" height="30"/>
+                                <rect key="frame" x="306.5" y="127" width="283" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="bAk-Nu-PVH"/>
@@ -263,7 +270,7 @@
                                 <exclude reference="Ev0-mo-AKX"/>
                                 <include reference="NgK-cz-SiS"/>
                                 <exclude reference="PIA-dh-cJj"/>
-                                <include reference="iNH-TN-QYO"/>
+                                <exclude reference="iNH-TN-QYO"/>
                                 <exclude reference="x22-bI-W5P"/>
                                 <include reference="0b5-5r-UUq"/>
                                 <exclude reference="10a-rd-AaE"/>
@@ -281,11 +288,12 @@
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="4jf-f4-SoX" id="W2a-eV-MeG"/>
-                        <outlet property="loginErrorLabel_bottomVerticalSpacing" destination="10a-rd-AaE" id="864-kx-Qh2"/>
-                        <outlet property="loginErrorLabel_topVerticalSpacing" destination="Ev0-mo-AKX" id="wlu-QU-iCC"/>
-                        <outlet property="loginError_heightConstraint" destination="Of3-xQ-sBc" id="WS4-MP-SVV"/>
                         <outlet property="passwordTextField" destination="Ahe-hD-wZp" id="SmY-fu-80K"/>
                         <outlet property="usernameTextField" destination="K9J-oN-Urq" id="x1i-F0-iCc"/>
+                        <outletCollection property="loginErrorLabel_topVerticalSpacing" destination="Ev0-mo-AKX" collectionClass="NSMutableArray" id="rKD-fZ-kJT"/>
+                        <outletCollection property="loginErrorLabel_heightConstraint" destination="Of3-xQ-sBc" collectionClass="NSMutableArray" id="zcH-ON-8ng"/>
+                        <outletCollection property="loginErrorLabel_topVerticalSpacing" destination="CBs-jq-VUp" collectionClass="NSMutableArray" id="Sze-eR-uaM"/>
+                        <outletCollection property="loginErrorLabel_heightConstraint" destination="Haf-hN-UxZ" collectionClass="NSMutableArray" id="X2G-YB-GBW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
