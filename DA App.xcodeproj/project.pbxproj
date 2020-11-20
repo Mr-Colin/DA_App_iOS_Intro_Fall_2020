@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB3BCAB52567749F005F2D17 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3BCAB42567749F005F2D17 /* EventsViewController.swift */; };
+		CB3BCAB92567766C005F2D17 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3BCAB72567766C005F2D17 /* EventTableViewCell.swift */; };
+		CB3BCABA2567766C005F2D17 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3BCAB82567766C005F2D17 /* EventTableViewCell.xib */; };
 		CBCFF888253686C100BB60C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFF887253686C100BB60C1 /* AppDelegate.swift */; };
 		CBCFF88A253686C100BB60C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFF889253686C100BB60C1 /* SceneDelegate.swift */; };
 		CBCFF88C253686C100BB60C1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFF88B253686C100BB60C1 /* LogInViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB3BCAB42567749F005F2D17 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		CB3BCAB72567766C005F2D17 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		CB3BCAB82567766C005F2D17 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		CBCFF884253686C100BB60C1 /* DA App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DA App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCFF887253686C100BB60C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBCFF889253686C100BB60C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				CBCFF890253686C300BB60C1 /* Assets.xcassets */,
 				CBCFF892253686C300BB60C1 /* LaunchScreen.storyboard */,
 				CBCFF895253686C300BB60C1 /* Info.plist */,
+				CB3BCAB42567749F005F2D17 /* EventsViewController.swift */,
+				CB3BCAB72567766C005F2D17 /* EventTableViewCell.swift */,
+				CB3BCAB82567766C005F2D17 /* EventTableViewCell.xib */,
 			);
 			path = "DA App";
 			sourceTree = "<group>";
@@ -124,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3BCABA2567766C005F2D17 /* EventTableViewCell.xib in Resources */,
 				CBCFF894253686C300BB60C1 /* LaunchScreen.storyboard in Resources */,
 				CBCFF891253686C300BB60C1 /* Assets.xcassets in Resources */,
 				CBCFF88F253686C100BB60C1 /* Main.storyboard in Resources */,
@@ -138,7 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBCFF88C253686C100BB60C1 /* LogInViewController.swift in Sources */,
+				CB3BCAB52567749F005F2D17 /* EventsViewController.swift in Sources */,
 				CBCFF888253686C100BB60C1 /* AppDelegate.swift in Sources */,
+				CB3BCAB92567766C005F2D17 /* EventTableViewCell.swift in Sources */,
 				CBCFF88A253686C100BB60C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
