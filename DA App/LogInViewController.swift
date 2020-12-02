@@ -43,6 +43,8 @@ class LogInViewController: UIViewController {
         
         if self.username == "admin" && password == "123"{
             print("Access Granted!")
+            
+            performSegue(withIdentifier: "loginSegue", sender: nil)
         }else{
 
             self.loginErrorLabel_topVerticalSpacing[0].constant = 20
