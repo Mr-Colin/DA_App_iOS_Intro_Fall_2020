@@ -346,20 +346,137 @@
         <!--Home-->
         <scene sceneID="j7R-V2-fob">
             <objects>
-                <viewController id="i0N-vt-uI4" sceneMemberID="viewController">
+                <viewController id="i0N-vt-uI4" customClass="HomeViewController" customModule="DA_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Onk-Hf-1hT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osE-3w-bFk" userLabel="homeLabel">
+                                <rect key="frame" x="20" y="20" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6eI-14-DxJ"/>
+                                    <constraint firstAttribute="width" constant="65" id="LkS-M3-b7J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loc-u6-cuw" userLabel="topContainer">
+                                <rect key="frame" x="20" y="70" width="374" height="114"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DA-Sign" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H1y-om-aw1">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="114"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tops in Transfer and More!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uju-0a-Kbn" userLabel="sloganLabel">
+                                        <rect key="frame" x="20" y="8" width="152" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="152" id="Nvq-fa-TY2"/>
+                                            <constraint firstAttribute="height" constant="41" id="ewd-td-HjL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.57579332589999999" green="0.017922237519999999" blue="0.18850207329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Caj-0n-JRl" userLabel="aboutUsButton">
+                                        <rect key="frame" x="20" y="74" width="64" height="30"/>
+                                        <color key="backgroundColor" red="0.47227627039999998" green="0.01692911796" blue="0.056457854809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Lpg-0f-O32"/>
+                                            <constraint firstAttribute="width" constant="64" id="gaK-wx-fEF"/>
+                                        </constraints>
+                                        <state key="normal" title="About Us">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="H1y-om-aw1" firstAttribute="height" secondItem="loc-u6-cuw" secondAttribute="height" id="I6a-8x-K1G"/>
+                                    <constraint firstItem="H1y-om-aw1" firstAttribute="centerY" secondItem="loc-u6-cuw" secondAttribute="centerY" id="KrT-Re-eoF"/>
+                                    <constraint firstItem="H1y-om-aw1" firstAttribute="centerX" secondItem="loc-u6-cuw" secondAttribute="centerX" id="Yv6-SV-sqb"/>
+                                    <constraint firstItem="H1y-om-aw1" firstAttribute="leading" secondItem="Uju-0a-Kbn" secondAttribute="trailing" constant="-172" id="bzd-rh-35G"/>
+                                    <constraint firstItem="Caj-0n-JRl" firstAttribute="top" secondItem="H1y-om-aw1" secondAttribute="bottom" constant="-40" id="lEA-Gh-g8Z"/>
+                                    <constraint firstItem="H1y-om-aw1" firstAttribute="leading" secondItem="Caj-0n-JRl" secondAttribute="trailing" constant="-84" id="nPG-Vk-TOx"/>
+                                    <constraint firstItem="H1y-om-aw1" firstAttribute="top" secondItem="Uju-0a-Kbn" secondAttribute="bottom" constant="-49" id="rg4-Pr-R4E"/>
+                                    <constraint firstItem="H1y-om-aw1" firstAttribute="width" secondItem="loc-u6-cuw" secondAttribute="width" id="y9J-2q-YxV"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Achieve Your Goals!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jy3-oH-Na2" userLabel="achieveLabel">
+                                <rect key="frame" x="20" y="204" width="136" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="kxl-WU-xL3"/>
+                                    <constraint firstAttribute="width" constant="136" id="zqe-ga-nps"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AUW-Zh-sKl" userLabel="homeTableView">
+                                <rect key="frame" x="20" y="242" width="374" height="497"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ThreePartsCell" id="kKi-cg-Ckp" customClass="ThreePartsTableViewCell" customModule="DA_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kKi-cg-Ckp" id="TZu-4H-Guk">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="secondCell" id="Pah-Ec-FTt">
+                                        <rect key="frame" x="0.0" y="71.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pah-Ec-FTt" id="lgj-FE-IX3">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="thirdCell" id="UUg-Xv-JUc">
+                                        <rect key="frame" x="0.0" y="115" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UUg-Xv-JUc" id="rka-Yb-fyl">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="i0N-vt-uI4" id="d1s-or-4wq"/>
+                                    <outlet property="delegate" destination="i0N-vt-uI4" id="fxa-WR-pEs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7d8-1o-Ucv"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="osE-3w-bFk" firstAttribute="leading" secondItem="7d8-1o-Ucv" secondAttribute="leading" constant="20" id="064-jG-TsG"/>
+                            <constraint firstItem="jy3-oH-Na2" firstAttribute="leading" secondItem="7d8-1o-Ucv" secondAttribute="leading" constant="20" id="DZ4-eZ-OnE"/>
+                            <constraint firstItem="AUW-Zh-sKl" firstAttribute="top" secondItem="jy3-oH-Na2" secondAttribute="bottom" constant="20" id="Fps-QR-bWV"/>
+                            <constraint firstItem="jy3-oH-Na2" firstAttribute="top" secondItem="loc-u6-cuw" secondAttribute="bottom" constant="20" id="P0H-MF-fTr"/>
+                            <constraint firstItem="osE-3w-bFk" firstAttribute="top" secondItem="7d8-1o-Ucv" secondAttribute="top" constant="20" id="SdF-PD-BOx"/>
+                            <constraint firstItem="loc-u6-cuw" firstAttribute="height" secondItem="7d8-1o-Ucv" secondAttribute="height" multiplier="0.15" id="YSO-3h-FIr"/>
+                            <constraint firstItem="AUW-Zh-sKl" firstAttribute="leading" secondItem="7d8-1o-Ucv" secondAttribute="leading" constant="20" id="aQc-ca-5vC"/>
+                            <constraint firstItem="7d8-1o-Ucv" firstAttribute="bottom" secondItem="AUW-Zh-sKl" secondAttribute="bottom" constant="20" id="afA-jb-8V5"/>
+                            <constraint firstItem="loc-u6-cuw" firstAttribute="leading" secondItem="7d8-1o-Ucv" secondAttribute="leading" constant="20" id="cwW-hh-OR5"/>
+                            <constraint firstItem="loc-u6-cuw" firstAttribute="top" secondItem="osE-3w-bFk" secondAttribute="bottom" constant="20" id="fg4-Hn-jb9"/>
+                            <constraint firstItem="7d8-1o-Ucv" firstAttribute="trailing" secondItem="loc-u6-cuw" secondAttribute="trailing" constant="20" id="p98-B4-aj1"/>
+                            <constraint firstItem="7d8-1o-Ucv" firstAttribute="trailing" secondItem="AUW-Zh-sKl" secondAttribute="trailing" constant="20" id="qc5-KA-b3K"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Home-Tab-Icon" id="456-88-gql">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="aboutUsButton" destination="Caj-0n-JRl" id="aKj-vc-75d"/>
+                        <outlet property="homeTableView" destination="AUW-Zh-sKl" id="dAr-z9-XIG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jIR-Cf-Wsp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1651" y="-524"/>
+            <point key="canvasLocation" x="1650.7246376811595" y="-524.33035714285711"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xeC-Y6-d1b">
@@ -447,16 +564,17 @@
     <resources>
         <image name="Contact-Tab-Icon" width="23" height="23"/>
         <image name="DA-Logo" width="50" height="50"/>
+        <image name="DA-Sign" width="475" height="387"/>
         <image name="Event-Tab-Icon" width="23" height="23"/>
         <image name="Home-Tab-Icon" width="23" height="23"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

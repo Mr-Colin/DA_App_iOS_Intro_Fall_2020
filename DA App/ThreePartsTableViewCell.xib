@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ThreePartsCell" id="KGk-i7-Jjw" customClass="ThreePartsTableViewCell" customModule="DA_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DA-Buildings" translatesAutoresizingMaskIntoConstraints="NO" id="HtN-kc-BjY" userLabel="leftImageView">
+                        <rect key="frame" x="40" y="0.0" width="80" height="150"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DA-Students" translatesAutoresizingMaskIntoConstraints="NO" id="J0V-0r-NZ9" userLabel="centerImageView">
+                        <rect key="frame" x="120" y="0.0" width="80" height="150"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DA-Sign" translatesAutoresizingMaskIntoConstraints="NO" id="1Jh-76-1E7" userLabel="rightImageView">
+                        <rect key="frame" x="200" y="0.0" width="80" height="150"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                <constraints>
+                    <constraint firstItem="1Jh-76-1E7" firstAttribute="height" secondItem="J0V-0r-NZ9" secondAttribute="height" id="Loz-nj-c7L"/>
+                    <constraint firstItem="J0V-0r-NZ9" firstAttribute="leading" secondItem="HtN-kc-BjY" secondAttribute="trailing" id="ROZ-RI-bOR"/>
+                    <constraint firstItem="HtN-kc-BjY" firstAttribute="centerY" secondItem="J0V-0r-NZ9" secondAttribute="centerY" id="XW4-ZC-WWW"/>
+                    <constraint firstAttribute="bottom" secondItem="J0V-0r-NZ9" secondAttribute="bottom" id="hlH-8c-dD3"/>
+                    <constraint firstItem="J0V-0r-NZ9" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.25" id="kAE-ZW-tnP"/>
+                    <constraint firstItem="HtN-kc-BjY" firstAttribute="height" secondItem="J0V-0r-NZ9" secondAttribute="height" id="pb6-1x-LFg"/>
+                    <constraint firstItem="1Jh-76-1E7" firstAttribute="centerY" secondItem="J0V-0r-NZ9" secondAttribute="centerY" id="tlg-aK-F9e"/>
+                    <constraint firstItem="J0V-0r-NZ9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tn1-Hc-LMv"/>
+                    <constraint firstItem="J0V-0r-NZ9" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="v93-Uk-QPZ"/>
+                    <constraint firstItem="1Jh-76-1E7" firstAttribute="width" secondItem="J0V-0r-NZ9" secondAttribute="width" id="wO3-Bt-jM6"/>
+                    <constraint firstItem="HtN-kc-BjY" firstAttribute="width" secondItem="J0V-0r-NZ9" secondAttribute="width" id="y7i-59-3xB"/>
+                    <constraint firstItem="1Jh-76-1E7" firstAttribute="leading" secondItem="J0V-0r-NZ9" secondAttribute="trailing" id="yCF-rc-sx1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="131.8840579710145" y="87.723214285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DA-Buildings" width="900" height="900"/>
+        <image name="DA-Sign" width="475" height="387"/>
+        <image name="DA-Students" width="1920" height="1080"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -10,6 +10,9 @@
 		CB3BCAB52567749F005F2D17 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3BCAB42567749F005F2D17 /* EventsViewController.swift */; };
 		CB3BCAB92567766C005F2D17 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3BCAB72567766C005F2D17 /* EventTableViewCell.swift */; };
 		CB3BCABA2567766C005F2D17 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3BCAB82567766C005F2D17 /* EventTableViewCell.xib */; };
+		CBC70EC9257ECD30001457D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC70EC8257ECD30001457D4 /* HomeViewController.swift */; };
+		CBC70ECE257ECF72001457D4 /* ThreePartsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC70ECC257ECF71001457D4 /* ThreePartsTableViewCell.swift */; };
+		CBC70ECF257ECF72001457D4 /* ThreePartsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC70ECD257ECF71001457D4 /* ThreePartsTableViewCell.xib */; };
 		CBCFF888253686C100BB60C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFF887253686C100BB60C1 /* AppDelegate.swift */; };
 		CBCFF88A253686C100BB60C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFF889253686C100BB60C1 /* SceneDelegate.swift */; };
 		CBCFF88C253686C100BB60C1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCFF88B253686C100BB60C1 /* LogInViewController.swift */; };
@@ -22,6 +25,9 @@
 		CB3BCAB42567749F005F2D17 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		CB3BCAB72567766C005F2D17 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		CB3BCAB82567766C005F2D17 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		CBC70EC8257ECD30001457D4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CBC70ECC257ECF71001457D4 /* ThreePartsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreePartsTableViewCell.swift; sourceTree = "<group>"; };
+		CBC70ECD257ECF71001457D4 /* ThreePartsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreePartsTableViewCell.xib; sourceTree = "<group>"; };
 		CBCFF884253686C100BB60C1 /* DA App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DA App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCFF887253686C100BB60C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBCFF889253686C100BB60C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +78,9 @@
 				CB3BCAB42567749F005F2D17 /* EventsViewController.swift */,
 				CB3BCAB72567766C005F2D17 /* EventTableViewCell.swift */,
 				CB3BCAB82567766C005F2D17 /* EventTableViewCell.xib */,
+				CBC70EC8257ECD30001457D4 /* HomeViewController.swift */,
+				CBC70ECC257ECF71001457D4 /* ThreePartsTableViewCell.swift */,
+				CBC70ECD257ECF71001457D4 /* ThreePartsTableViewCell.xib */,
 			);
 			path = "DA App";
 			sourceTree = "<group>";
@@ -136,6 +145,7 @@
 				CB3BCABA2567766C005F2D17 /* EventTableViewCell.xib in Resources */,
 				CBCFF894253686C300BB60C1 /* LaunchScreen.storyboard in Resources */,
 				CBCFF891253686C300BB60C1 /* Assets.xcassets in Resources */,
+				CBC70ECF257ECF72001457D4 /* ThreePartsTableViewCell.xib in Resources */,
 				CBCFF88F253686C100BB60C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,9 +159,11 @@
 			files = (
 				CBCFF88C253686C100BB60C1 /* LogInViewController.swift in Sources */,
 				CB3BCAB52567749F005F2D17 /* EventsViewController.swift in Sources */,
+				CBC70ECE257ECF72001457D4 /* ThreePartsTableViewCell.swift in Sources */,
 				CBCFF888253686C100BB60C1 /* AppDelegate.swift in Sources */,
 				CB3BCAB92567766C005F2D17 /* EventTableViewCell.swift in Sources */,
 				CBCFF88A253686C100BB60C1 /* SceneDelegate.swift in Sources */,
+				CBC70EC9257ECD30001457D4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
